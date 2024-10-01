@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All</title>
+  
+  <link rel="stylesheet" href="https://alder-shimmering-dry.glitch.me/gallery%20all.css">
+</head>
+<body>
+
+ <div class="duv"></div>
+    <div class="up-fotter">
+        <img class="logo" src="https://res.cloudinary.com/dqiejl7da/image/upload/logo.png">
+        <div class="menu-icon" id="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="duv"></div>
+  <!-- Gallery selection section as buttons -->
+  <div class="selection">
+    <button id="videoButton" onclick="showVideos()">Videos</button>
+    <button id="pictureButton" onclick="showPictures()">Pictures</button>
+  </div>
+
+  <div class="gallery" id="mediaGallery"></div>
+
+  <!-- Modal for playing videos -->
+  <div id="videoModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <video id="videoPlayer" controls>
+      <source id="videoSource" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="nav-buttons">
+      <button onclick="prevVideo()"><img src="previous.png" class="prnx1"></button>
+      <button onclick="nextVideo()"><img src="next.png" class="prnx2"></button>
+    </div>
+  </div>
+
+  <!-- Modal for enlarged pictures -->
+  <div id="imageModal" class="modal" onclick="closeImageModal(event)">
+    <span class="close" onclick="closeImageModal(event)">&times;</span>
+    <img id="enlargedImage" alt="Enlarged Picture">
+  </div>
+
+  <script src="https://miniature-changeable-comb.glitch.me/gallery%20all.js">
+   
+  </script>
+</body>
+</html>
